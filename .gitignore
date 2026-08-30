@@ -1,0 +1,67 @@
+# ---- Real sequencing / clinical data: NEVER commit ----
+results/
+fastq_pass/
+*.fastq
+*.fastq.gz
+*.fast5
+*.pod5
+*.bam
+*.bai
+*.sam
+*.cram
+*.vcf
+*.vcf.gz
+sequencing_summary*
+# any sample sheet EXCEPT the synthetic template
+sample_sheet*.csv
+!**/sample_sheet_TEMPLATE.csv
+
+# ---- Large / non-redistributable assets: fetch or regenerate, do not store ----
+# raw genome panels, BLAST databases, alignments, trees, indexes
+*.nsq
+*.nhr
+*.nin
+*.ndb
+*.njs
+*.not
+*.ntf
+*.nto
+*.mmi
+grch38*
+*_panel.fasta
+*_panel.*.fasta
+*.mldist
+*.uniqueseq.phy
+clair3_models/
+miniforge*
+Miniforge*
+
+# ---- Secrets ----
+.env
+*.pem
+*.key
+id_rsa*
+.netrc
+credentials*
+*.token
+
+# ---- OS / editor / Python cruft ----
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.swp
+
+# ---- Proposal/scheme IP — kept LOCAL, never committed (primer sequences, positions,
+#      per-type schemes, ARTIC bundle, methods report & audit provenance) ----
+design-outputs/
+reports/
+hpv-analysis-bundle/primer-schemes/
+hpv-analysis-bundle/metadata/
+hpv-analysis-bundle/MANIFEST.txt
+hpv-analysis-bundle/SHA256SUMS
+hpv-analysis-bundle/README.md
+
+assets/*.src.html

@@ -1,0 +1,4 @@
+barcode,sample_id,expected_types,notes
+# barcode = MinKNOW barcodeNN folder (e.g. barcode01); expected_types optional, ;-separated
+barcode01,SAMPLE_001,,
+barcode02,SAMPLE_002,,
