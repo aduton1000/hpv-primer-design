@@ -1,18 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this software or the HPV primer scheme (v5), please cite it as below."
-title: "HPV Primer Design — v5 (12 high-risk types, lineage-robust tiling-amplicon scheme)"
+title: "HPV Primer Design: v5 lineage-robust tiling-amplicon scheme for 12 high-risk HPV types"
 abstract: >-
   Design project for a whole-genome tiling-amplicon primer scheme covering 12 high-risk HPV
   types (HPV 16/18/31/33/35/39/45/52/56/58/59/66), optimised to be lineage-robust for
   sub-Saharan Africa. Includes the scheme-generation code, the final v5 scheme outputs
   (per-type primer.bed and canonical-accession reference.fasta), and the methods/provenance
   record (inclusivity, specificity, lineage and pool-balance audits, phylogeny).
-type: software
-version: "1.0.0"
+authors:
+  - family-names: "Adu"
+    given-names: "Bright"
+    alias: "aduton1000"
+    orcid: "https://orcid.org/0000-0002-3622-2137"
+    affiliation: "Genomics & Bioinformatics Core, Noguchi Memorial Institute for Medical Research, University of Ghana, Legon, Ghana"
+version: 1.0.0
 date-released: "2026-06-07"
 license: MIT
+type: software
 repository-code: "https://github.com/aduton1000/hpv-primer-design"
 keywords:
+  - bioinformatics
   - HPV
   - human papillomavirus
   - tiling amplicon
@@ -20,9 +27,8 @@ keywords:
   - whole-genome sequencing
   - sub-Saharan Africa
   - Oxford Nanopore
-authors:
-  - family-names: "Adu"
-    given-names: "Bright"
-    affiliation: "Genomics and Bioinformatics Core, Noguchi Memorial Institute for Medical Research, University of Ghana, Legon, Ghana"
-    email: "badu@noguchi.ug.edu.gh"
-    orcid: "https://orcid.org/0000-0002-3622-2137"
+references:
+  - type: software
+    title: "HPV Nanopore Analysis Pipeline: CPU-only whole-genome reconstruction of 12 high-risk HPV types from tiling-amplicon reads"
+    repository-code: "https://github.com/aduton1000/hpv-nanopore-pipeline"
+    notes: "Downstream analysis pipeline that consumes the scheme v5 bundle produced here."
